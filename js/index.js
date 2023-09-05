@@ -108,3 +108,21 @@ function closeModal(modal, modalOverlay, className) {
   modal.classList.remove(className)
   modalOverlay.classList.remove(className)
 }
+
+/**
+ * Validate email
+ */
+const emailInput = modalItself.querySelector('input[type="email"]')
+const messageAlert = modalItself.querySelector('.inv-message')
+  emailInput.addEventListener('change', (e) => {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const testEmail = emailPattern.test(e.target.value)
+
+  if(!testEmail) {
+    messageAlert.classList.add('inv-message-shown')
+    messageAlert.innerText = 'Incorrect e-mail'
+  } else {
+    messageAlert.classList.remove('inv-message-shown')
+    messageAlert.innerText = ''
+  }
+})

@@ -913,7 +913,16 @@ a {
   color: rgba(255, 255, 255, 0.15);
   line-height: 20px;
 }
-
+.inv-message {
+  opacity: 0;
+  visibility: hidden;
+  color: #d52a2a;
+  transition: .3s opacity;
+}
+.inv-message-shown {
+  opacity: 1;
+  visibility: visible;
+}
 .inv-textarea {
   height: 100px;
   resize: none;
