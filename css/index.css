@@ -935,7 +935,9 @@ a {
   font: 300 12px/16px var(--font);
   color: rgba(255, 255, 255, 0.30);
 }
-
+.swiper-button-disabled {
+  opacity: .45;
+}
 @media (max-width: 1366px) {
   .inv-section-jackpot {
     background-size: 1440px;
@@ -1220,6 +1222,9 @@ a {
 
   }
   .inv-regions-map {
+    height: auto;
+  }
+  .inv-graph img {
     height: auto;
   }
 }
