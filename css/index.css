@@ -58,6 +58,8 @@ a {
 .inv-footer-video {
   mask-image:url(../img/main-bg.png);
   -webkit-mask-image: url(../img/main-bg.png);
+  -webkit-mask-box-image-repeat: stretch;
+  -webkit-mask-position: center;
 }
 
 
