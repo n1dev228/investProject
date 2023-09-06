@@ -1219,6 +1219,9 @@ a {
     max-width: 90%;
 
   }
+  .inv-regions-map {
+    height: auto;
+  }
 }
 
 @media (max-width: 568px) {

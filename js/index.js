@@ -1,11 +1,14 @@
 const projectsSwiper = new Swiper(".inv-section-projects", {
 
+  navigation: {
+    nextEl: ".inv-button-next",
+    prevEl: ".inv-button-prev",
+  },
   breakpoints: {
     320: {
 
       slidesPerView: 1,
-      allowSlideNext: true,
-      allowSlidePrev: true,
+
     },
     1024: {
       slidesPerView: 'auto',
